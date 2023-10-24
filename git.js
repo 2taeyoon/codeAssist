@@ -19,10 +19,14 @@
     ssh -T git@github-nicompany     // SSH 연결을 테스트
     exit & logout   // SSH 세션 종료
 
+    eval "$(ssh-agent -s)" (SSH 에이전트 실행)
+    ssh-add C:\\Users\\taeyoon\\.ssh\\id_rsa_nicompany (SSH 키를 에이전트에 추가하여 원격 서버에 연결)
+
     SSH Key를 연결한 GIT 계정에서 원하는 레포지토리의 SSH 주소 복사 후
     터미널 창에서 git clone 입력
     최초로 GIT 계정에 연결시 yes를 입력하여 GIT Server와 연결 수락
 
+    [이건 권장하지 않음]
     git remote -v (현재 저장된 리모트 확인)
     git remote set-url origin <새로운 리모트> (리모트 연결(pub 파일 X), bash)
     git remote remove origin (origin 리모트 연결 해제, bash)

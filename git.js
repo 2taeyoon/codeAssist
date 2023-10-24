@@ -15,7 +15,7 @@
 
     ssh -i C:\\Users\\유저 이름\\.ssh\\ssh파일이름 설정한Host이름
     ssh -T git@github-2tae // SSH 연결을 테스트
-    exit & logout   // SSH 세션 종
+    exit & logout   // SSH 세션 종료
 
     SSH Key를 연결한 GIT 계정에서 원하는 레포지토리의 SSH 주소 복사 후
     터미널 창에서 git clone 입력

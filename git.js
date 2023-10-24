@@ -19,8 +19,10 @@
     ssh -T git@github-nicompany     // SSH 연결을 테스트
     exit & logout   // SSH 세션 종료
 
-    eval "$(ssh-agent -s)" (SSH 에이전트 실행)
-    ssh-add C:\\Users\\taeyoon\\.ssh\\id_rsa_nicompany (SSH 키를 에이전트에 추가하여 원격 서버에 연결)
+    eval "$(ssh-agent -s)" (SSH 에이전트 실행(bash))
+    ssh-add C:\\Users\\taeyoon\\.ssh\\id_rsa_nicompany (SSH 키를 에이전트에 추가하여 원격 서버에 연결(bash))
+
+    cd /c/Users/taeyoon/Desktop/code (bash에서 cd 절대경로 이동방법)
 
     SSH Key를 연결한 GIT 계정에서 원하는 레포지토리의 SSH 주소 복사 후
     터미널 창에서 git clone 입력

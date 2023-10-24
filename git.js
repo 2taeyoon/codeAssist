@@ -24,7 +24,7 @@
     git remote -v (현재 저장된 리모트 확인)
     git remote set-url origin <새로운 리모트> (리모트 연결(pub 파일 X), bash)
     git remote remove origin (origin 리모트 연결 해제, bash)
-    
+
     [ react build 이용시 build 전용 branch 사용법 ]
     레퍼지토리 생성하고 해당 프로젝트의 경로에서 package.json 파일에 homepage 작성
     "homepage": "실제 사이트 주소"  // 절대경로 이용시 사용안해도 무관

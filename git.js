@@ -1,11 +1,11 @@
 /*
     [SSH Key 연결하는 법]
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"   // 터미널 창에서 로컬 PC에 ssh key 생성
-    Enter file in which to save the key (C:\Users\유저/.ssh/id_rsa):    // 경로 지정하고 엔터
+    Enter file in which to save the key (C:\Users\유저 이름/.ssh/id_rsa):    // 경로 지정하고 엔터
     Enter passphrase (empty for no passphrase):     // 비밀번호 입력(설정 안 해도 가능)
     Enter same passphrase again:    // 비밀번호 다시 입력(설정 안 해도 가능)
 
-    cd C:\Users\유저\.ssh  // SSH 위치로 이동(window)
+    cd C:\Users\사용자 이름\.ssh  // SSH 위치로 이동(window)
     cd ~/.ssh  // SSH 위치로 이동(macOS)
 
     type id_rsa.pub   // SSH 공개 Key 확인(window)
@@ -13,12 +13,16 @@
 
     .ssh 폴더 안에 id_rsa 파일 = 개인 키, id_rsa.pub 파일 = 공개 키
 
+    ssh -i C:\\Users\\유저 이름\\.ssh\\id_rsa_2tae github-2tae
+    ssh -T git@github-2tae // SSH 연결을 테스트
+    exit & logout   // SSH 세션 종료
+
     SSH Key를 연결한 GIT 계정에서 원하는 레포지토리의 SSH 주소 복사 후
     터미널 창에서 git clone 입력
     최초로 GIT 계정에 연결시 yes를 입력하여 GIT Server와 연결 수락
 
     git remote -v (현재 저장된 리모트 확인)
-    git remote set-url origin <새로운 리모트> (리모트 연결, bash)
+    git remote set-url origin <새로운 리모트> (리모트 연결(pub 파일 X), bash)
     git remote remove origin (origin 리모트 연결 해제, bash)
     
     [ react build 이용시 build 전용 branch 사용법 ]

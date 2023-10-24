@@ -13,14 +13,16 @@
 
     .ssh 폴더 안에 id_rsa 파일 = 개인 키, id_rsa.pub 파일 = 공개 키
 
-    ssh -i C:\\Users\\taeyoon\\.ssh\\id_rsa_nicompany github-nicompany
     ssh -i C:\\Users\\유저 이름\\.ssh\\ssh파일이름 설정한Host이름
-    ssh -T git@github-2tae          // SSH 연결을 테스트
-    ssh -T git@github-nicompany     // SSH 연결을 테스트
+
+    ssh -T git@설정한HOST이름     // SSH 연결이 되었는지 테스트
     exit & logout   // SSH 세션 종료
 
-    eval "$(ssh-agent -s)" (SSH 에이전트 실행(bash))
-    ssh-add C:\\Users\\taeyoon\\.ssh\\비밀키 (SSH 키를 에이전트에 추가하여 원격 서버에 연결(bash))
+    1. eval "$(ssh-agent -s)" (SSH 에이전트 실행(bash))
+    1-1(선택사항). ssh -i C:\\Users\\taeyoon\\.ssh\\id_rsa_nicompany github-nicompany (개인 키를 사용하여 SSH에 1번만 연결(bash))
+
+    2. ssh-add C:\\Users\\유저이름\\.ssh\\개인키 (SSH 키를 에이전트에 추가하여 캐시를 이용하여 계속 연결(bash))
+    2-1. ssh 설정한HOST이름(에이전트가 캐싱한 키를 사용하여 호스트에 대한 SSH 연결을 설정)
 
     cd /c/Users/taeyoon/Desktop/code (bash에서 cd 절대경로 이동방법)
 

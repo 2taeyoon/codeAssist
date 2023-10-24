@@ -20,7 +20,7 @@
     exit & logout   // SSH 세션 종료
 
     eval "$(ssh-agent -s)" (SSH 에이전트 실행(bash))
-    ssh-add C:\\Users\\taeyoon\\.ssh\\id_rsa_nicompany (SSH 키를 에이전트에 추가하여 원격 서버에 연결(bash))
+    ssh-add C:\\Users\\taeyoon\\.ssh\\비밀키 (SSH 키를 에이전트에 추가하여 원격 서버에 연결(bash))
 
     cd /c/Users/taeyoon/Desktop/code (bash에서 cd 절대경로 이동방법)
 

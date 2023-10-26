@@ -15,14 +15,19 @@
 
     ssh -i C:\\Users\\유저 이름\\.ssh\\ssh파일이름 설정한Host이름
 
-    ssh -T git@설정한HOST이름     // SSH 연결이 되었는지 테스트
-    exit & logout   // SSH 세션 종료
-
     1. eval "$(ssh-agent -s)" (SSH 에이전트 실행(bash))
     1-1(선택사항). ssh -i C:\\Users\\taeyoon\\.ssh\\id_rsa_nicompany github-nicompany (개인 키를 사용하여 SSH에 1번만 연결(bash))
 
     2. ssh-add C:\\Users\\유저이름\\.ssh\\개인키 (SSH 키를 에이전트에 추가하여 캐시를 이용하여 계속 연결(bash))
     2-1. ssh 설정한HOST이름(에이전트가 캐싱한 키를 사용하여 호스트에 대한 SSH 연결을 설정)
+    
+    3. ssh -T git@설정한HOST이름     // SSH 연결이 되었는지 테스트
+    exit & logout   // SSH 세션 종료
+
+    [세션 종료 후에 다시 연결할 때]
+    1. eval "$(ssh-agent -s)" (SSH 에이전트 실행(bash))
+    2. ssh-add C:\\Users\\유저\\.ssh\\id_rsa_nicompany (SSH 키를 에이전트에 추가하여 캐시를 이용하여 계속 연결(bash))
+    3. ssh -T git@github-nicompany
 
     cd /c/Users/taeyoon/Desktop/code (bash에서 cd 절대경로 이동방법)
 
@@ -30,7 +35,7 @@
     터미널 창에서 git clone 입력
     최초로 GIT 계정에 연결시 yes를 입력하여 GIT Server와 연결 수락
 
-    [이건 권장하지 않음]
+    [그냥 레퍼지토리 리모트하는 거임]
     git remote -v (현재 저장된 리모트 확인)
     git remote set-url origin <새로운 리모트> (리모트 연결(pub 파일 X), bash)
     git remote remove origin (origin 리모트 연결 해제, bash)

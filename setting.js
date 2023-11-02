@@ -27,27 +27,39 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": ["entity.name.tag.tsx", "keyword.control.default.tsx", "keyword.control"],
+        "scope": ["entity.name.tag.tsx", "keyword.control.default.tsx"],
         "settings": {
-          "foreground": "#E06C75" // 태그 이름 색상
+          "foreground": "#E06C75"
         }
       },
       {
         "scope": ["punctuation.definition.tag.end", "punctuation.definition.tag.begin"],
         "settings": {
-          "foreground": "#ABB2BF" // 태그 열림 닫힘 꺽쇠
+          "foreground": "#ABB2BF"
         }
       },
       {
-        "scope": ["string.quoted.double", "string.quoted.single"],
+        "scope": ["string"],
         "settings": {
-          "foreground": "#c5a05b" // 싱글 쿼터, 더블 쿼터
+          "foreground": "#c5a05b"
         }
       },
       {
-        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite", "support.variable"],
+        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite", "support.variable", "constant.numeric"],
         "settings": {
-          "foreground": "#24d0e7" // 어트리뷰트, 프로퍼티, 파라미터
+          "foreground": "#1cb9ce"
+        }
+      },
+      {
+        "scope": ["storage.type","keyword.control"],
+        "settings": {
+          "foreground": "#C678DD"
+        }
+      },
+      {
+        "scope": ["constant.language"],
+        "settings": {
+          "foreground": "#4FC1FF"
         }
       }
     ]

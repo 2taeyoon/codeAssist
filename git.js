@@ -29,7 +29,7 @@
   1. eval "$(ssh-agent -s)" (SSH 에이전트 실행(bash))
   2. ssh-add C:\\Users\\유저\\.ssh\\id_rsa_nicompany (SSH 키를 에이전트에 추가하여 캐시를 이용하여 계속 연결(bash))
   3. ssh -T git@github-nicompany
-  
+
   cd /c/Users/taeyoon/Desktop/code (bash에서 cd 절대경로 이동방법)
 
   SSH Key를 연결한 GIT 계정에서 원하는 레포지토리의 SSH 주소 복사 후

@@ -45,7 +45,7 @@
         }
       },
       {
-        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite.alias"],
+        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite", "support.variable"],
         "settings": {
           "foreground": "#24d0e7" // 어트리뷰트, 프로퍼티, 파라미터
         }

@@ -39,13 +39,13 @@
         }
       },
       {
-        "scope": ["string"],
+        "scope": ["string", "support.constant.property-value", "entity.other.attribute-name.class.css", "constant.other.color.rgb-value"],
         "settings": {
           "foreground": "#c5a05b"
         }
       },
       {
-        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite", "support.variable", "constant.numeric"],
+        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite", "support.variable", "support.type.property-name"],
         "settings": {
           "foreground": "#1cb9ce"
         }

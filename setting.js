@@ -51,13 +51,13 @@
         }
       },
       {
-        "scope": ["storage.type","keyword.control"],
+        "scope": ["storage.type","keyword.control", "constant.language"],
         "settings": {
           "foreground": "#C678DD"
         }
       },
       {
-        "scope": ["constant.language"],
+        "scope": ["variable.other.property", "variable.other.constant.object"],
         "settings": {
           "foreground": "#4FC1FF"
         }

@@ -202,9 +202,9 @@
     npx create-react-app my-app --template typescript (react에서 typeScript를 사용하는 my-app 생성)
     yarn create react-app my-app --template typescript (react에서 typeScript를 사용하는 my-app 생성)
 
-    npm install @types/node @types/react @types/react-dom @types/jest --save-dev (프로젝트에 typeScript를 사용하는 types 모듈을 개발용으로 설치)
+    npm install @types/node @types/react @types/react-dom @types/jest --dev (프로젝트에 typeScript를 사용하는 types 모듈을 개발용으로 설치)
     npm install react-router-dom (프로젝트에 react-router-dom 설치)
-    npm install @types/react-router-dom --save-dev (프로젝트에 typeScript를 사용하는 react-router-dom 모듈을 개발용으로 설치)
+    npm install @types/react-router-dom --dev (프로젝트에 typeScript를 사용하는 react-router-dom 모듈을 개발용으로 설치)
     
     ctrl + shift + b -> tsconfig build 선택 (React에서 변환하는 방법)
 

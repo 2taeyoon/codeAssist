@@ -45,7 +45,7 @@
         }
       },
       {
-        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite", "support.variable", "support.type.property-name"],
+        "scope": ["entity.other.attribute-name", "variable.other.property", "variable.parameter", "variable.other.readwrite", "support.variable", "support.type.property-name", "support.type.vendored.property-name"],
         "settings": {
           "foreground": "#1cb9ce"
         }
@@ -57,7 +57,7 @@
         }
       },
       {
-        "scope": ["variable.other.property", "variable.other.constant.object"],
+        "scope": ["variable.other.property", "variable.other.constant.object", "variable.other.object"],
         "settings": {
           "foreground": "#4FC1FF"
         }

@@ -6,7 +6,7 @@
     5. npm install -g npm@latest (npm 업데이트)
     6. npm install -g npm@10.0.0 (npm 10.0.0으로 업데이트)
     7. https://mine-it-record.tistory.com/664 (node, npm 최신 업데이트 설명 사이트)
-    8. nvm 설치 및 설명 사이트 https://jang8584.tistory.com/295, github nvm 파일 다운로드(nvm-setup.zip) https://github.com/coreybutler/nvm-windows/releases
+    8. nvm 설치 및 설명 사이트 https://github.com/coreybutler/nvm-windows/releases
 
         ********** nvm 명령어 **********
         nvm install lts(node.js 업데이트)
